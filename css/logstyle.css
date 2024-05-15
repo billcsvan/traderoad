@@ -1,0 +1,344 @@
+header {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 30%;
+    float: left;
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: fixed;
+    margin-top: 5vh;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 69%;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.portfolio-section {
+    margin-bottom: 30px;
+}
+
+.portfolio-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.asset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.asset h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Performance Charts styles */
+.charts-section {
+    margin-bottom: 30px;
+}
+
+.charts-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.history-section {
+    margin-bottom: 30px;
+}
+
+.history-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#helpin {
+    margin-top: 200px;
+    margin-bottom: 400px;
+}
+
+
+.see-more-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Account Settings Section */
+.account-section {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+.account-section h2 {
+    margin-bottom: 10px;
+}
+
+.current-info {
+    margin-bottom: 20px;
+}
+
+#accountForm label,
+#changePasswordForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#accountForm input[type="text"],
+#accountForm input[type="email"],
+#changePasswordForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#accountForm button,
+#changePasswordForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.response-message,
+#passwordResponseMessage {
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Style for the deposit form */
+#depositFormContainer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+
+#depositForm {
+    display: flex;
+    align-items: center;
+}
+
+#depositForm label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#depositForm input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#depositForm button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#depositResponseMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#charts {
+    padding-top: 20px;
+}
+
+/* Style for the withdraw form */
+#withdrawFormContainer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+#withdrawForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#withdrawForm label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#withdrawForm input[type="number"],
+#withdrawForm input[type="email"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#withdrawForm button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#withdrawResponseMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.asset {
+    position: relative;
+}
+
+.asset:hover {
+    cursor: pointer;
+}
+
+.sell-amount {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.sell-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.sell-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cancel-sell-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.sell-button:hover,
+.cancel-sell-button:hover {
+    opacity: 0.8;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        height: fit-content;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin-top: 10vh;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: row-reverse;
+        z-index: 5;
+        position: relative;
+    }
+
+    #charts {
+        padding-top: 0;
+    }
+
+    .main-content {
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    #withdrawForm {
+        flex-direction: row;
+    }
+}
